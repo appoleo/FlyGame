@@ -90,6 +90,7 @@ namespace FlyGame
             Console.ReadKey(true);
             int step = random.Next(6) + 1;
             playersPos[playerIndex] += step;
+            ChangePos();
             Console.WriteLine("{0}掷出了{1}", playersName[playerIndex], step);
             Console.ReadKey(true);
             Console.WriteLine("{0}按任意键开始行动", playersName[playerIndex]);
